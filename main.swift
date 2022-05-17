@@ -63,7 +63,8 @@ if temp <= 15{ //temp <= 15
 print("========================================")
 
 //switch
-var letra = readLine()
+print("ingresar valor")
+var letra = "d"
 
 
 switch letra {
@@ -75,3 +76,48 @@ case "b","B","c","C","d","D","f","F","g","G","h","H","j","J","k","K","l","L","m"
 default:
     print("El valor ingresado no es permitido. Se requiere una letra")
 }
+
+let moons = 62
+let phrase = "lunas en Saturno"
+let naturalCount : String
+switch moons {
+case 0:
+    naturalCount = "No hay"
+case 1, 2, 3, 4:
+    naturalCount = "Hay unas pocas"
+case 5..<12:
+    naturalCount = "Hay bastantes"
+case 12..<100:
+    naturalCount = "Hay decenas de"
+case 100..<1000:
+    naturalCount = "Hay centenares de"
+default:
+    naturalCount = "Hay muchiiiiisimas"
+}
+print("\(naturalCount) \(phrase)")
+
+
+let money2 = 450
+let phrase2 : String
+let face : String
+
+switch money2 {
+case 0..<10:
+    phrase2 = "dar dinero"
+    face = "😀"
+case 10..<20:
+    phrase2 = "dar dinero haciendo mueca"
+    face = "🙃"
+case 20..<50:
+    phrase2 = "dar dinero con sermon"
+    face = "🤬"
+case 50..<100:
+    phrase2 = "no dar dinero y decir que en otro momento"
+    face = "🤪"
+default:
+    phrase2 = "no dar dinero y decir que nunca jamas"
+    face = "😎"
+}
+
+print("\(phrase2) \(face)")
+print("========================================")
